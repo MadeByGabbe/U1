@@ -1,6 +1,7 @@
 "use strict";
 
 
+
 /*
 
 By now:
@@ -151,3 +152,14 @@ function roundString(numberWithManyDecimals, decimals){
   return (Math.round(numberWithManyDecimals * rounded) / rounded).toFixed(decimals);
 }
 
+function updateResults(className) {
+
+  let arrayNumbers = getArrayOfSelectedNumbers(className)
+
+  document.querySelector("#results > div:nth-child(1) > span").innerHTML = " " + arrayNumbers.join()
+  document.querySelector("#results > div:nth-child(2) > span").innerHTML = " " + arrayNumbers.length
+  document.querySelector("#results > div:nth-child(3) > span").innerHTML = " " + adder(arrayNumbers)
+  document.querySelector("#results > div:nth-child(4) > span").innerHTML = " " + averg(arrayNumbers)
+  
+
+}

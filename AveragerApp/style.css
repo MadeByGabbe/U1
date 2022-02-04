@@ -38,8 +38,8 @@ body {
 }
 
 #grid > div.selected {
-  background-color: aqua;
-  color: navy;
+  background-color: green;
+  color: whitesmoke;
 }
 
 #grid > div:hover {
@@ -47,8 +47,3 @@ body {
   box-shadow: 0 0 10px black;
 }
 
-.selected {
-  border-radius: 10px;
-  background-color: green;
-  color: whitesmoke;
-}
