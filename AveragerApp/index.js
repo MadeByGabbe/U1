@@ -86,12 +86,12 @@ function roundString(numberWithManyDecimals, decimals) {
 
 function updateResults(className) {
 
-    let arrayNumbers = getArrayOfSelectedNumbers(className)
+    let SelectedNumbers = getArrayOfSelectedNumbers(className)
 
-    document.querySelector("#results > div:nth-child(1) > span").innerHTML = " " + arrayNumbers.join(", ")
-    document.querySelector("#results > div:nth-child(2) > span").innerHTML = " " + arrayNumbers.length
-    document.querySelector("#results > div:nth-child(3) > span").innerHTML = " " + adder(arrayNumbers)
-    document.querySelector("#results > div:nth-child(4) > span").innerHTML = " " + averg(arrayNumbers)
+    document.querySelector("#results > div:nth-child(1) > span").innerHTML = " " + SelectedNumbers.join(", ")
+    document.querySelector("#results > div:nth-child(2) > span").innerHTML = " " + SelectedNumbers.length
+    document.querySelector("#results > div:nth-child(3) > span").innerHTML = " " + adder(SelectedNumbers)
+    document.querySelector("#results > div:nth-child(4) > span").innerHTML = " " + averg(SelectedNumbers)
     
 
 }
