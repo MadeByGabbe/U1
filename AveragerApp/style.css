@@ -4,6 +4,8 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: rgb(70, 70, 70);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #top > div {
@@ -25,8 +27,6 @@ body {
   gap: 1vh;
 
   font-size: 3vh;
-
-  border: 1px solid grey;
 }
 
 #grid > div {
@@ -34,16 +34,21 @@ body {
   justify-content: center;
   align-items: center;
 
-  background-color: grey;
+  color: whitesmoke;
+  background-color: maroon;
 }
 
 #grid > div.selected {
   background-color: green;
   color: whitesmoke;
+  border-radius: 10px;
 }
 
 #grid > div:hover {
   cursor: pointer;
-  box-shadow: 0 0 10px black;
+  box-shadow: 0 0 10px green;
 }
 
+#selected, #amount, #sum, #average, label {
+  color: whitesmoke;
+}
