@@ -47,6 +47,7 @@ body {
 #grid > div:hover {
   cursor: pointer;
   box-shadow: 0 0 10px green;
+  border-radius: 10px;
 }
 
 #selected, #amount, #sum, #average, label {

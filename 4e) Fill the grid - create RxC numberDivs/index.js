@@ -15,31 +15,31 @@ VIDEO:  Record a video where you explain the two different ways (see above) of c
 
 */
 
-// function gridMaker(gridContainer,R, C) {
+function gridMaker(gridContainer,R, C) {
 
-//         gridContainer.style.gridTemplateColumns = `repeat(${C}, 1fr)`;
-//         gridContainer.style.gridTemplateRows = `repeat(${R}, 1fr)`;
+        gridContainer.style.gridTemplateColumns = `repeat(${C}, 1fr)`;
+        gridContainer.style.gridTemplateRows = `repeat(${R}, 1fr)`;
         
-//         for (let i = 0; i < R; i++) {
+        for (let i = 0; i < R; i++) {
 
-//                 let row = document.createElement("div");
-//                 gridContainer.appendChild(row);
+                let row = document.createElement("div");
+                gridContainer.appendChild(row);
 
-//                 for (let i = 0; i < C; i++) {
+                for (let i = 0; i < C; i++) {
 
-//                         let columns = document.createElement("div");
-//                         gridContainer.appendChild(columns);
+                        let columns = document.createElement("div");
+                        gridContainer.appendChild(columns);
         
         
-//                 }
+                }
 
 
-//         }
+        }
 
 
 
     
-//     }
+    }
 
 function gridMaker(gridContainer,R, C) {
 
@@ -56,10 +56,3 @@ function gridMaker(gridContainer,R, C) {
 
     }
 
-document.querySelector("button").addEventListener("click", function () {
-
-        let rows = Number.parseInt(document.getElementById("inputRows").value);
-        let cols = Number.parseInt(document.getElementById("inputCols").value);
-    
-        gridMaker( document.querySelector("#grid"), rows, cols);
-})

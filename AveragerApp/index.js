@@ -115,4 +115,5 @@ document.querySelector("button").addEventListener("click", function () {
 gridMaker(
     document.querySelector("#grid"),
     Number.parseInt(document.getElementById("inputRows").value),
-    Number.parseInt(document.getElementById("inputCols").value));
+    Number.parseInt(document.getElementById("inputCols").value)
+)
